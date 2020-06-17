@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.838);
+  background-image: url("../images/bg-intro-mobile.png");
+  form {
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px #6d6d70;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0.612);
+    div ul li a {
+      color: whitesmoke;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+}
