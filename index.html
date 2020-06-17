@@ -14,13 +14,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Add modal components -->
-    <!-- Button trigger modal -->
-
-    <!-- Modal -->
+    <!-- Modal-1 -->
     <div
       class="modal fade"
-      id="modal"
+      id="saveModal"
       tabindex="-1"
       role="dialog"
       aria-labelledby="modalLabel"
@@ -50,12 +47,45 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save koder</button>
+            <button id="save-koder" type="button" class="btn btn-primary">
+              Save koder
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Modal -->
+    <!-- End Modal-1 -->
+    <!-- Modal-2  -->
+    <div id="successModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Registro exitoso</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal-2  -->
     <!-- nav -->
     <nav
       class="navbar navbar-expand-lg navbar-light d-flex justify-content-between px-5"
@@ -87,7 +117,7 @@
         </div>
         <!-- col2 -->
         <div class="col-12 col-md-8">
-          <form class="border p-4 mt-1 mt-md-5 bg-white">
+          <form id="koder-form" class="border p-4 mt-1 mt-md-5 bg-white">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Name</label>
@@ -145,7 +175,7 @@
               type="button"
               class="btn btn-outline-info px-5"
               data-toggle="modal"
-              data-target="#modal"
+              data-target="#saveModal"
             >
               Save koder
             </button>
@@ -173,5 +203,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
