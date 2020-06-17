@@ -96,17 +96,23 @@
       <div>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Registro</a>
+            <a id="registro" class="nav-link" href="index.html">Registro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Koders</a>
+            <a
+              id="kodersCard"
+              class="nav-link"
+              href="#"
+              onclick="loadContent('cards.html')"
+              >Koders</a
+            >
           </li>
         </ul>
       </div>
     </nav>
     <!-- Fin nav -->
     <!-- inicio contenedor general -->
-    <div class="container">
+    <div id="container-wrapper" class="container">
       <!-- row-1 -->
       <div
         class="row d-flex justify-content-md-between align-items-md-center justify-content-center align-items-cente my-5"
@@ -134,8 +140,8 @@
                 <input
                   type="text"
                   class="form-control"
-                  name="last-name"
-                  id="last-name"
+                  name="lastName"
+                  id="lastName"
                   placeholder="Last Name"
                 />
               </div>
@@ -183,6 +189,9 @@
         </div>
       </div>
       <!-- Fin row-1 -->
+      <!-- <div id="cardWrapper" class="row">
+
+      </div> -->
     </div>
     <!-- Fin contenedor general -->
     <!-- ----------- En lazando archivos necesarios para BOOTSTRAP ---------------------- -->
