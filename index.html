@@ -14,6 +14,48 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Add modal components -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Registro</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Deseas continuar con el registro?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save koder</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
     <!-- nav -->
     <nav
       class="navbar navbar-expand-lg navbar-light d-flex justify-content-between px-5"
@@ -24,7 +66,7 @@
       <div>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="#">Registro</a>
+            <a class="nav-link" href="index.html">Registro</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Koders</a>
@@ -36,80 +78,77 @@
     <!-- inicio contenedor general -->
     <div class="container">
       <!-- row-1 -->
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <h1 class="text-white mt-3 mt-md-0">REGISTRA A TU KODER</h1>
+      <div
+        class="row d-flex justify-content-md-between align-items-md-center justify-content-center align-items-cente my-5"
+      >
+        <!-- col-1 -->
+        <div class="titulo col-12 col-md-4">
+          <h1 class="text-white mt-4 mt-md-0">REGISTRA A TU KODER</h1>
         </div>
+        <!-- col2 -->
         <div class="col-12 col-md-8">
-          <form class="border p-4 mt-5 bg-white">
+          <form class="border p-4 mt-1 mt-md-5 bg-white">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
+                <label for="inputEmail4">Name</label>
                 <input
-                  type="email"
+                  type="name"
                   class="form-control"
-                  id="inputEmail4"
-                  placeholder="Email"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
                 />
               </div>
               <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
+                <label for="inputPassword4">Last Name</label>
                 <input
-                  type="password"
+                  type="text"
                   class="form-control"
-                  id="inputPassword4"
-                  placeholder="Password"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Last Name"
                 />
               </div>
             </div>
             <div class="form-group">
-              <label for="inputAddress">Address</label>
+              <label for="inputAddress">Age</label>
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress"
-                placeholder="1234 Main St"
+                name="age"
+                id="age"
+                placeholder="Age"
               />
             </div>
             <div class="form-group">
-              <label for="inputAddress2">Address 2</label>
-              <input
-                type="text"
+              <label for="biography">Biography </label>
+              <textarea
+                ype="text"
                 class="form-control"
-                id="inputAddress2"
-                placeholder="Apartment, studio, or floor"
-              />
+                id="biography"
+                name="biography"
+                placeholder="Tell us about your koder"
+              ></textarea>
             </div>
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity" />
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip" />
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-check">
+              <div class="form-group col-md-12">
+                <label for="photo">Photo (url)</label>
                 <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="gridCheck"
+                  type="text"
+                  class="form-control"
+                  name="photo"
+                  id="photo"
                 />
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button
+              type="button"
+              class="btn btn-outline-info px-5"
+              data-toggle="modal"
+              data-target="#modal"
+            >
+              Save koder
+            </button>
           </form>
         </div>
       </div>

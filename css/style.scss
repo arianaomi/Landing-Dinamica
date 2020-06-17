@@ -4,14 +4,30 @@
 body {
   background-color: rgba(0, 0, 0, 0.838);
   background-image: url("../images/bg-intro-mobile.png");
+  .titulo > h1 {
+    font-size: xx-large;
+    font-weight: 300;
+    padding-bottom: 10px;
+    text-align: center;
+  }
   form {
     border-radius: 10px;
     box-shadow: 3px 5px 10px #6d6d70;
   }
+
   nav {
     background-color: rgba(0, 0, 0, 0.612);
-    div ul li a {
-      color: whitesmoke;
+    div ul li {
+      margin-left: 5px;
+      a {
+        color: whitesmoke;
+
+        &:hover {
+          background-color: peru;
+          border-radius: 20px;
+          color: white;
+        }
+      }
     }
   }
 }
@@ -19,5 +35,12 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     background-image: url("../images/bg-intro-desktop.png");
+    .titulo > h1 {
+      font-size: xx-large;
+      font-weight: 300;
+      padding-bottom: 10px;
+      margin-right: 10px;
+      box-shadow: 5px 5px 5px peru;
+    }
   }
 }
