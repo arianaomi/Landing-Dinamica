@@ -47,7 +47,7 @@ const printCard = (koderObject) => {
   let { name, lastName, age, biography, photo } = koderObject;
   $("#cardWrapper").append(`<div class="col-12 col-md-4 my-3">
       <div class="card">
-      <img class="card-img-top" src="${photo}" alt="Card image cap">
+      <img id="imageKoderCard" class="card-img-top" src="${photo}" alt="Card image cap object-fit=cover" >
       <div class="card-body">
         <h5 class="">${name} ${lastName}</h5>
         <h6>${age}</h4>
