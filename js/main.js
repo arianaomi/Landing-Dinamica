@@ -49,7 +49,7 @@ const printCard = (koderObject) => {
       <div class="card">
       <img id="imageKoderCard" class="card-img-top" src="${photo}" alt="Card image cap object-fit=cover" >
       <div class="card-body">
-        <h5 class="">${name} ${lastName}</h5>
+        <h5 class="userName">${name} ${lastName}</h5>
         <h6>${age}</h4>
         <p class="card-text">${biography}</p>
       </div>
